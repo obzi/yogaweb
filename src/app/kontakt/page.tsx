@@ -137,7 +137,6 @@ export default function Kontakt() {
                   >
                     info@nutyo.cz
                   </a>
-                  <p className="text-foreground/50 text-sm mt-1">(placeholder)</p>
                 </div>
 
                 <div>
@@ -148,7 +147,6 @@ export default function Kontakt() {
                   >
                     +420 123 456 789
                   </a>
-                  <p className="text-foreground/50 text-sm mt-1">(placeholder)</p>
                 </div>
 
                 <div>
@@ -158,7 +156,6 @@ export default function Kontakt() {
                     Ulice 123<br />
                     Praha, 110 00
                   </p>
-                  <p className="text-foreground/50 text-sm mt-1">(placeholder)</p>
                 </div>
 
                 {/* Social links */}
@@ -181,9 +178,15 @@ export default function Kontakt() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
+              {/* Map */}
               <div className="mt-8 bg-warm rounded-2xl aspect-video flex items-center justify-center">
-                <span className="text-warm-dark text-sm">Mapa — placeholder</span>
+                <div className="text-center">
+                  <svg className="w-8 h-8 text-warm-dark mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  <p className="text-warm-dark text-sm">Mapa bude doplnena</p>
+                </div>
               </div>
             </div>
           </div>
