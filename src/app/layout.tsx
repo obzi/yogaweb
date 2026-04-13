@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "YogaVital — Yoga & Zdrava Vyziva",
+  title: "NUTYO — Yoga & Zdrava Vyziva",
   description:
     "Lekce yogy, nutricni poradenstvi, workshopy, vikendove pobyty a kurzy pro harmonii tela i mysli.",
 };

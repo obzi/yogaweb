@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold mb-3">YogaVital</h3>
+            <h3 className="text-lg font-bold mb-3">NUTYO</h3>
             <p className="text-white/70 text-sm leading-relaxed">
-              Yoga, zdrava vyziva a harmonie tela i mysli.
+              Yoga, nutrice a harmonie tela i mysli.
               Najdete u nas lekce, kurzy, workshopy a pobyty.
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-6 text-center text-sm text-white/50">
-          &copy; {new Date().getFullYear()} YogaVital. Vsechna prava vyhrazena.
+          &copy; {new Date().getFullYear()} NUTYO. Vsechna prava vyhrazena.
         </div>
       </div>
     </footer>

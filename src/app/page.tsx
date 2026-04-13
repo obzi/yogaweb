@@ -28,7 +28,7 @@ export default function Home() {
             Harmonie tela i mysli
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-foreground/70 max-w-2xl mx-auto">
-            Yoga, zdrava vyziva a celistvy pristup k vasemu zdravi.
+            Yoga, nutrice a celistvy pristup k vasemu zdravi.
             Najdete u nas lekce, kurzy, workshopy i vikendove pobyty.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">

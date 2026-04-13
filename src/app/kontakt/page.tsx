@@ -132,10 +132,10 @@ export default function Kontakt() {
                 <div>
                   <h3 className="font-semibold mb-1">E-mail</h3>
                   <a
-                    href="mailto:info@yogavital.cz"
+                    href="mailto:info@nutyo.cz"
                     className="text-accent-dark hover:underline"
                   >
-                    info@yogavital.cz
+                    info@nutyo.cz
                   </a>
                   <p className="text-foreground/50 text-sm mt-1">(placeholder)</p>
                 </div>
@@ -154,7 +154,7 @@ export default function Kontakt() {
                 <div>
                   <h3 className="font-semibold mb-1">Adresa</h3>
                   <p className="text-foreground/70">
-                    YogaVital Studio<br />
+                    NUTYO Studio<br />
                     Ulice 123<br />
                     Praha, 110 00
                   </p>
