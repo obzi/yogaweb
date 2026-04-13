@@ -30,7 +30,7 @@ export default function ONas() {
             <div>
               <h2 className="text-2xl font-bold mb-1">Karolina</h2>
               <p className="text-accent-dark font-medium mb-4">
-                Lektorka jogy, nutricni poradkyne, zakladatelka NUKARU
+                Nutricni poradkyne, zakladatelka NUKARU
               </p>
               <div className="space-y-4 text-foreground/70 leading-relaxed">
                 <p>

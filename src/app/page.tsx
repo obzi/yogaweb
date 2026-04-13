@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const highlights = [
@@ -5,32 +6,19 @@ const highlights = [
     title: "Lekce yogy",
     desc: "Individualni i skupinove lekce pro vsechny urovne.",
     href: "/sluzby",
-    icon: (
-      <svg className="w-6 h-6 text-accent-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-1.5 4-4 6-4 9a4 4 0 108 0c0-3-2.5-5-4-9z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-3" />
-      </svg>
-    ),
+    image: "/yogaweb/yoga-class.jpg",
   },
   {
     title: "Zdrava vyziva",
     desc: "Nutricni poradenstvi a sestaveni jidelnicku na miru.",
     href: "/sluzby",
-    icon: (
-      <svg className="w-6 h-6 text-accent-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8v1m0 7v1m0-9a4.5 4.5 0 00-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
+    image: "/yogaweb/healthy-food.jpg",
   },
   {
     title: "Kurzy & Workshopy",
     desc: "Vikendove pobyty, seminare a uzavrene kurzy.",
     href: "/sluzby",
-    icon: (
-      <svg className="w-6 h-6 text-accent-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-      </svg>
-    ),
+    image: "/yogaweb/workshop.jpg",
   },
 ];
 
@@ -73,15 +61,22 @@ export default function Home() {
               <Link
                 key={h.title}
                 href={h.href}
-                className="group bg-white rounded-2xl p-8 shadow-sm border border-warm-dark/10 hover:shadow-md hover:border-accent/30 transition-all"
+                className="group bg-white rounded-2xl shadow-sm border border-warm-dark/10 hover:shadow-md hover:border-accent/30 transition-all overflow-hidden"
               >
-                <div className="w-12 h-12 bg-accent/20 rounded-xl mb-4 flex items-center justify-center">
-                  {h.icon}
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image
+                    src={h.image}
+                    alt={h.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-accent-dark transition-colors">
-                  {h.title}
-                </h3>
-                <p className="text-foreground/60">{h.desc}</p>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-accent-dark transition-colors">
+                    {h.title}
+                  </h3>
+                  <p className="text-foreground/60">{h.desc}</p>
+                </div>
               </Link>
             ))}
           </div>
